@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BestShopEver.Models.DTOs
 {
-    internal class CartItemQuantityUpdateDTO
+    public class CartItemQuantityUpdateDTO
     {
+        public int CartItemId { get; set; }
+        public int Quantity { get; set; }
     }
 }
