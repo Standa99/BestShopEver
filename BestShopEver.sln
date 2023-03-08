@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestShopEver.Web", "BestShopEver.Web\BestShopEver.Web.csproj", "{F345009A-7996-482D-A80A-BED7936D46FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestShopEver.Api", "BestShopEver.Api\BestShopEver.Api.csproj", "{6B571930-AD6B-4E42-9DD6-6DD055955D1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F345009A-7996-482D-A80A-BED7936D46FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F345009A-7996-482D-A80A-BED7936D46FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F345009A-7996-482D-A80A-BED7936D46FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F345009A-7996-482D-A80A-BED7936D46FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B571930-AD6B-4E42-9DD6-6DD055955D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B571930-AD6B-4E42-9DD6-6DD055955D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B571930-AD6B-4E42-9DD6-6DD055955D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B571930-AD6B-4E42-9DD6-6DD055955D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0CE2139-06CA-436E-9676-79A157364F76}
+	EndGlobalSection
+EndGlobal
