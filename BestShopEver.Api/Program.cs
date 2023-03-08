@@ -1,4 +1,6 @@
 using BestShopEver.Api.Data;
+using BestShopEver.Api.Repositories;
+using BestShopEver.Api.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,6 +16,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContextPool<BestShopEverDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("BestShopEverDevelopmentConnection"))
     );
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
