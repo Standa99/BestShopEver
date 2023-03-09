@@ -15,5 +15,20 @@ namespace BestShopEver.Web.Pages
         {
             ProductDTOs = await ProductService.GetItems();
         }
+        protected IEnumerable<IGrouping<int,ProductDTO>> GetGroupProductsByCategory()
+        {
+			var groupedProductsByCategory = ProductDTOs.GroupBy(product => product.CategoryId)
+							.OrderBy(group => group.Key)
+							.Select(g => g);
+            return groupedProductsByCategory;
+		}
+
+        protected string GetCategoryName(IGrouping<int,ProductDTO> groupedProductDTOs)
+        {
+            return groupedProductDTOs
+                .FirstOrDefault(g => g.CategoryId == groupedProductDTOs.Key)
+                .CategoryName;
+        }
+
     }
 }
