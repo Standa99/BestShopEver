@@ -3,6 +3,7 @@ using BestShopEver.Api.Repositories;
 using BestShopEver.Api.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(policy =>
+    policy.WithOrigins("http://localhost:7164", "https://localhost:7164")
+    .AllowAnyMethod()
+    .WithHeaders(HeaderNames.ContentType));
 
 app.UseHttpsRedirection();
 
